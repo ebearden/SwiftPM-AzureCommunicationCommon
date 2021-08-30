@@ -52,19 +52,6 @@ let package = Package(
                 "Source/Supporting Files",
                 "LICENSE"
             ]
-        ),
-        // Test targets
-        .testTarget(
-            name: "AzureCommunicationCommonTests",
-            dependencies: ["AzureCommunicationCommon"],
-            path: "Tests",
-            exclude: [
-                "Info.plist",
-                "AzureCommunicationCommonTests-Bridging-Header.h",
-                "ObjCCommunicationTokenCredentialTests.m",
-                "ObjCCommunicationTokenCredentialAsyncTests.m",
-                "ObjCTokenParserTests.m"
-            ]
         )
     ],
     swiftLanguageVersions: [.v5]
